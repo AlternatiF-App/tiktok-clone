@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     '@pinia-plugin-persistedstate/nuxt',
   ],
+  build: {
+    transpile: ['pinia-plugin-persistedstate'],
+  },
   postcss: {
     plugins: {
       tailwindcss: {},
